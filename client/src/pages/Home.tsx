@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowLeft,
   BarChart3,
-  Check,
   ChevronLeft,
   FileText,
   Landmark,
@@ -19,11 +18,11 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 const assets = {
-  hero: "/manus-storage/sijil-hero-ledger_127afb81.jpg",
-  archive: "/manus-storage/sijil-services-archive_7d908262.jpg",
-  process: "/manus-storage/sijil-process-geometry_c65efb1a.jpg",
-  insight: "/manus-storage/sijil-insight-detail_1789f0e0.jpg",
-  mark: "/manus-storage/sijil-mark_321c326a.png",
+  hero: `${import.meta.env.BASE_URL}images/hero-ledger.jpg`,
+  archive: `${import.meta.env.BASE_URL}images/services-archive.jpg`,
+  process: `${import.meta.env.BASE_URL}images/process-geometry.jpg`,
+  insight: `${import.meta.env.BASE_URL}images/insight-detail.jpg`,
+  mark: `${import.meta.env.BASE_URL}images/mark.png`,
 };
 
 function scrollToRequest() {
@@ -244,4 +243,3 @@ export default function Home() {
     </main>
   );
 }
-
